@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "local": "sls offline"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "dayjs": "^1.11.3",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "serverless-offline": "^8.8.0"
   }
 }
