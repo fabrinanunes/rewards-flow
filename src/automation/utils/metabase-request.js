@@ -1,4 +1,5 @@
 const { default: axios } = require("axios");
+const METABASE_SESSION = process.env.METABASE_SESSION
 
 module.exports = async ({ cardId, params = "" }) => {
   try {
@@ -12,7 +13,7 @@ module.exports = async ({ cardId, params = "" }) => {
       method: "POST",
       url,
       headers: {
-        "x-metabase-session": "21b9cf77-3eb5-4191-92db-9d93e228593e",
+        "x-metabase-session": METABASE_SESSION
       },
       retries: 5,
       json: true,
